@@ -1,0 +1,19 @@
+=== Test 1: Normal week (goal achieved) ===
+Total minutes : 165
+Per day       : {'Mon': 40, 'Wed': 50, 'Fri': 30, 'Sat': 45}
+Average/session: 41.25 min
+Goal progress : 110.0% -> Goal achieved!
+
+=== Test 2: Partial week (goal not met) ===
+Total: 70 min | 46.7% -> Behind target - 80 minutes left
+
+=== Test 3: Edge case - empty log ===
+Error caught: No activities recorded - cannot calculate average
+
+=== Test 4: Invalid inputs ===
+Error caught: Invalid day 'Funday'. Use one of ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+Error caught: Activity name cannot be empty
+Error caught: Minutes must be a number greater than zero
+
+=== Test 5: Boundary - exactly at goal ===
+(100.0, 'Goal achieved!')
