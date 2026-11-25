@@ -1,6 +1,6 @@
 from fitness_pkg import add_activity, weekly_total, average_duration, goal_status
 
-GOAL = 150  # WHO-style weekly goal in minutes (sample value)
+GOAL = 150  
 
 print("=== Test 1: Normal week (goal achieved) ===")
 log = []
