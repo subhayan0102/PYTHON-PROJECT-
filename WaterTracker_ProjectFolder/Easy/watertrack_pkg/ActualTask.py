@@ -1,4 +1,4 @@
-"""Daily Water Intake Tracker - function definitions (sample data only)."""
+
 
 
 def record_intake(intake_list, ml):
@@ -10,7 +10,7 @@ def record_intake(intake_list, ml):
 
 
 def target_status(total_ml, target_ml):
-    """Compare total water with the daily target and return a message."""
+    
     if target_ml <= 0:
         raise ValueError("Target must be greater than zero")
     if total_ml >= target_ml:
@@ -20,7 +20,7 @@ def target_status(total_ml, target_ml):
 
 
 def daily_summary(intake_list, target_ml):
-    """Return number of drinks, total ml, percentage and status."""
+   
     total = sum(intake_list)
     percent = (total / target_ml) * 100 if target_ml > 0 else 0
     status = target_status(total, target_ml)
