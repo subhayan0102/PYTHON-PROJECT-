@@ -1,0 +1,18 @@
+=== Test 1: Normal day (target achieved) ===
+Drinks : 5
+Total  : 2150 ml
+Progress: 107.5%
+Status : Target achieved!
+
+=== Test 2: Partial day (target not met) ===
+(2, 1000, 50.0, '1000 ml remaining')
+
+=== Test 3: Edge case - no water recorded ===
+(0, 0, 0.0, '2000 ml remaining')
+
+=== Test 4: Invalid inputs ===
+Error caught: Water amount must be a number greater than zero
+Error caught: Target must be greater than zero
+
+=== Test 5: Boundary - exactly at target ===
+Target achieved!
