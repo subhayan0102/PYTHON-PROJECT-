@@ -1,6 +1,6 @@
 from watertrack_pkg import record_intake, target_status, daily_summary
 
-TARGET = 2000  # daily target in ml (sample value)
+TARGET = 2000 
 
 print("=== Test 1: Normal day (target achieved) ===")
 day1 = []
